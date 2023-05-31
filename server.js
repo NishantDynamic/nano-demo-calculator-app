@@ -22,7 +22,7 @@ baseRouter.post('/add', (req, res) => {
 baseRouter.post('/subtract', (req, res) => {
     var {first,second} = req.body;
     res.json({ "result": first-second });
-});
+})
 
 app.use(baseUrl, baseRouter);
 app.listen(PORT, () => {
